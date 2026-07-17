@@ -69,9 +69,9 @@ app.use("/bookmyshow/api/v1/theatres/", authMiddleware, theatreRoutes);
 app.use("/bookmyshow/api/v1/shows/", authMiddleware, showRoutes);
 app.use("/bookmyshow/api/v1/bookings", authMiddleware, bookingRoutes)
 
-app.get("/", (req, res) => {
-    res.send("Book My Show Server")
-})
+// app.get("/", (req, res) => {
+//     res.send("Book My Show Server")
+// })
 
 // custom 404 handler
 app.use((req, res) => {
